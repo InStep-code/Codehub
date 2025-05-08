@@ -1,0 +1,72 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* Navigation */
+  .nav-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #e3f2fd;
+    border: 2px solid #90caf9;
+    border-radius: 8px;
+  }
+  
+  .nav-wrapper a {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: bold;
+  }
+  
+  /* Fieldsets for Layout */
+  fieldset {
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: #ffffff;
+  }
+  
+  legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: #0d47a1;
+  }
+  
+  /* Button */
+  .btn, button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover, button:hover {
+    background: #1565c0;
+  }
+  
+  /* Inputs and Form Elements */
+  input, textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

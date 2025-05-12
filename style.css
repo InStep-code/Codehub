@@ -1,3 +1,12 @@
+ /* root colors 
+ :root {
+     coadearea : #d1cece;
+     background: #fff;
+     button color:  background: #1976d2;
+     body background: background: #f8f9fa;
+     accronym background: goldenrod;
+ }
+*/
 /* General Reset */
 * {
     margin: 0;
@@ -69,4 +78,73 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  /*Accronym*/
+  span.def{
+    background-color: goldenrod;
+  }
   
+  /* Code area */ 
+    div.codearea{
+      width: 80%;
+      padding-left: 10px;
+    
+      border-radius: 5px;
+      background-color: #333;
+     
+  }
+  div.codearea h2 {
+    background-color: #d1cece; 
+    width: 100%;
+}
+ code{
+    
+  
+    color: blue;
+  }
+  /* Result area */
+  div.resultarea{
+    width: 80%;
+    background: #d1cece;
+    color: #333;
+    height: 10rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  div.resultarea h2 {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+  }
+  /* result area css */
+  div.css {
+    background-color: powderblue;
+      h3{
+        background-color: goldenrod;
+
+      }
+      p{
+        color: purple;
+      }
+  }
+
+  span.css {
+    color: green;
+  }
+
+  div.css2{
+    background-color: powderblue;
+
+    h3{
+      background-color: red;
+      color: white;
+      font-size: 25px;
+    }
+    p{
+      font-style: italic;
+      color: yellow;
+      font-weight: bold;
+    }
+  }

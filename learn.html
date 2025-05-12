@@ -21,12 +21,149 @@
   <main>
     <fieldset>
       <legend>HTML Basics</legend>
-      <p>HTML is the structure of your web page. Tags like &lt;h1&gt;, &lt;p&gt;, and &lt;a&gt; help you define elements on a page.</p>
+      <p>Html is an accronym for <span class="def">HyperText Markup Language</span> , most programmers do not consider Html a programming language, even so html is still the structure of every website. <br> Lets take real life example of the work html does, when building a house consider html your foundations and bricklayings.</p>
+      <p>HTML is the structure of your web page. <br>Html consist of tags like <strong><code> &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;body&gt;, &lt;head&gt;, &lt;html&gt;, &lt;a&gt;</code></strong> and many more, this tags help you define elements on a page. <br>However htmlhas the habbit of always requesting for a close tag, this is to identify where a particular element defination ended, this is usally recognised with a forward slash /.e.g <b><code> &lt;h1&gt;Hello World&lt;/h1&gt;</p></code></b>
+
+        <!-- Code area -->
+      <div class="codearea">
+        <h2>Example of html Element Declaration:</h2>
+        <code>
+          &lt;! DOCTYPE html;&gt; 
+          <br>
+          &nbsp;&lt;html&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;head&gt;
+          <br><br>
+          &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;body&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;I am Learning html basics with CodeHub&lt;/p&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+          <br>
+          &nbsp;&lt;/html&gt;
+          
+          
+        </code>
+      </div>
+
+      <div class="resultarea">
+        <h2>Result:</h2>
+        <h3>Hello world</h3>
+        <p>I am Learning html basics with CodeHub</p>
+      </div>
     </fieldset>
 
     <fieldset>
       <legend>CSS Basics</legend>
-      <p>CSS lets you style your HTML elements with colors, fonts, layouts, and more. Use classes and IDs to target elements in your CSS file.</p>
+      <p>CSS is an accronym for <span class="def">Casscading StyleSheet</span>, it lets you style your HTML elements with colors, fonts, layouts, and more. Use classes and IDs to target elements in your CSS file. <br> lets take real life example of css, we've consider html to be our foundation and Building structure, now CSS is the paint, Furniture, Burglaries, Tiles and any other stuffs that beautify our building.
+      <br>There are basically three ways to style our HTML elements with css</p>
+      <ul>
+        <strong><p>These are:</p></strong>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+      </ul>
+
+      <p><b>Inline CSS:</b> Thids is type of styling applied directly to your html elements, e.g <code> <b>&lt;h1 style="color: red;"&gt;Hello world&lt;/h1&gt;</b></code></p>
+        
+      <p><b>Internal CSS:</b> This type of styling is applied at the top of the html document insode the head tag, e.g <code><b>&lt;head&gt; &nbsp; &lt;style&gt; Style goes here.... &lt;/style&gt; &nbsp; &lt;/head&gt;</b></code></p>
+
+      <p><b>External CSS:</b> This type of styling is applied by linking an external file that contains our styling douments, it is linked using this code: <code><br><b>&lt;link rel="stylesheet" href="documentName.css"&gt;</b></code></p>
+
+       <!-- Code area -->
+       <div class="codearea">
+        <h2>Example of Inline CSS Declaration:</h2>
+        <code>
+          &lt;! DOCTYPE html;&gt; 
+          <br>
+          &nbsp;&lt;html&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;head&gt;
+          <br><br>
+          &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;body style="background-color: powderblue;"&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="background-color: goldenrod;"&gt;Hello World&lt;/h1&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="color: purple;"&gt;I am Learning html basics with CodeHub&lt;/p&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+          <br>
+          &nbsp;&lt;/html&gt;
+          
+          
+        </code>
+      </div>
+
+      <div class="resultarea css">
+        <h2>Result:</h2>
+        <h3>Hello world</h3>
+        <p>I am Learning html basics with CodeHub</p>
+      </div>
+
+       <!-- Code area -->
+       <div class="codearea">
+        <h2>Example of Internal CSS Declaration:</h2>
+        <code>
+         
+          &lt;! DOCTYPE html;&gt; 
+          <br>
+          &nbsp;&lt;html&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;head&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+          <span class="css">  
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body {
+              <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  background-color: powderblue; <br>
+           
+
+            } <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1 {
+              <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  background-color: red; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: white; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 25px;<br>
+
+            } <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p {
+              <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  background-color: red; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: yellow; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-style: italic;<br>
+
+            } <br>
+
+            <br>
+         </span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;body style="background-color: powderblue;"&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 style="background-color: goldenrod;"&gt;Hello World&lt;/h1&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="color: purple;"&gt;I am Learning html basics with CodeHub&lt;/p&gt;
+          <br>
+          &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+          <br>
+          &nbsp;&lt;/html&gt;
+          
+          
+        </code>
+      </div>
+
+      <div class="resultarea css2">
+        <h2>Result:</h2>
+        <h3>Hello world</h3>
+        <p>I am Learning html basics with CodeHub</p>
+      </div>
     </fieldset>
 
     <fieldset>
@@ -37,17 +174,9 @@
     <fieldset>
       <legend>HTML Forms: Using Fieldset</legend>
       <p>The <code>&lt;fieldset&gt;</code> tag groups related inputs, and <code>&lt;legend&gt;</code> provides a caption.</p>
+        
 
-      <form>
-        <fieldset>
-          <legend>Contact Info</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-        </fieldset>
-      </form>
+      
     </fieldset>
   </main>
 </body>
